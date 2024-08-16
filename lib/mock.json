@@ -1,0 +1,154 @@
+{id": 139,
+      "global_id": "backend-mhs.mkadev.de?id=139",
+      "global_id_lineage": [
+        "backend-mhs.mkadev.de?id=139"
+      ],
+      "author": "1",
+      "status": "publish",
+      "date": "2024-01-03 10:15:25",
+      "date_utc": "2024-01-03 09:15:25",
+      "modified": "2024-01-26 14:08:45",
+      "modified_utc": "2024-01-26 13:08:45",
+      "url": "https://backend-mhs.mkadev.de/termin/seminar-2/",
+      "rest_url": "https://backend-mhs.mkadev.de/wp-json/tribe/events/v1/events/139",
+      "title": "Seminar 2",
+      "description": "",
+      "excerpt": "",
+      "slug": "seminar-2",
+      "image": false,
+      "all_day": false,
+      "start_date": "2024-01-18 10:00:00",
+      "start_date_details": {
+        "year": "2024",
+        "month": "01",
+        "day": "18",
+        "hour": "10",
+        "minutes": "00",
+        "seconds": "00"
+      },
+      "end_date": "2024-02-14 23:59:00",
+      "end_date_details": {
+        "year": "2024",
+        "month": "02",
+        "day": "14",
+        "hour": "23",
+        "minutes": "59",
+        "seconds": "00"
+      },
+      "utc_start_date": "2024-01-18 09:00:00",
+      "utc_start_date_details": {
+        "year": "2024",
+        "month": "01",
+        "day": "18",
+        "hour": "09",
+        "minutes": "00",
+        "seconds": "00"
+      },
+      "utc_end_date": "2024-02-14 22:59:00",
+      "utc_end_date_details": {
+        "year": "2024",
+        "month": "02",
+        "day": "14",
+        "hour": "22",
+        "minutes": "59",
+        "seconds": "00"
+      },
+      "timezone": "Europe/Berlin",
+      "timezone_abbr": "CET",
+      "cost": "Kostenlos",
+      "cost_details": {
+        "currency_symbol": "",
+        "currency_code": "",
+        "currency_position": "prefix",
+        "values": [
+          "0"
+        ]
+      },
+      "website": "",
+      "show_map": false,
+      "show_map_link": true,
+      "hide_from_listings": false,
+      "sticky": false,
+      "featured": false,
+      "categories": [
+        {
+          "name": "Erlebnis entspanntes Miteinander",
+          "slug": "erlebnis-entspanntes-miteinander",
+          "term_group": 0,
+          "term_taxonomy_id": 9,
+          "taxonomy": "tribe_events_cat",
+          "description": "",
+          "parent": 0,
+          "count": 1,
+          "filter": "raw",
+          "id": 9,
+          "urls": {
+            "self": "https://backend-mhs.mkadev.de/wp-json/tribe/events/v1/categories/9",
+            "collection": "https://backend-mhs.mkadev.de/wp-json/tribe/events/v1/categories"
+          }
+        }
+      ],
+      "tags": [
+        
+      ],
+      "venue": {
+        "id": 40,
+        "author": "1",
+        "status": "publish",
+        "date": "2023-12-28 08:43:10",
+        "date_utc": "2023-12-28 07:43:10",
+        "modified": "2023-12-28 08:43:10",
+        "modified_utc": "2023-12-28 07:43:10",
+        "url": "https://backend-mhs.mkadev.de/veranstaltungsort/svdh-trebur/",
+        "venue": "SVdH Trebur",
+        "slug": "svdh-trebur",
+        "address": "Außerhalb 69a",
+        "city": "Trebur",
+        "province": "Hessen",
+        "zip": "65468",
+        "website": "https://www.hundeverein-trebur.de",
+        "stateprovince": "Hessen",
+        "show_map": false,
+        "show_map_link": true,
+        "global_id": "backend-mhs.mkadev.de?id=40",
+        "global_id_lineage": [
+          "backend-mhs.mkadev.de?id=40"
+        ]
+      },
+      "organizer": [
+        {
+          "id": 134,
+          "author": "1",
+          "status": "publish",
+          "date": "2024-01-03 10:04:30",
+          "date_utc": "2024-01-03 09:04:30",
+          "modified": "2024-01-03 10:08:05",
+          "modified_utc": "2024-01-03 09:08:05",
+          "url": "https://backend-mhs.mkadev.de/veranstalter/mhs/",
+          "organizer": "MHS",
+          "slug": "mhs",
+          "email": "maxkarkowski@gmail.com",
+          "global_id": "backend-mhs.mkadev.de?id=134",
+          "global_id_lineage": [
+            "backend-mhs.mkadev.de?id=134"
+          ]
+        },
+        {
+          "id": 43,
+          "author": "1",
+          "status": "publish",
+          "date": "2023-12-28 08:44:13",
+          "date_utc": "2023-12-28 07:44:13",
+          "modified": "2024-01-09 14:26:33",
+          "modified_utc": "2024-01-09 13:26:33",
+          "url": "https://backend-mhs.mkadev.de/veranstalter/svdh-trebur/",
+          "organizer": "SVdH Trebur",
+          "slug": "svdh-trebur",
+          "website": "https://hundeverein-trebur.de",
+          "email": "maxkarkowski@gmail.com",
+          "global_id": "backend-mhs.mkadev.de?id=43",
+          "global_id_lineage": [
+            "backend-mhs.mkadev.de?id=43"
+          ]
+        }
+      ]}
