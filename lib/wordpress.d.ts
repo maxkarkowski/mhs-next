@@ -55,7 +55,14 @@ export type Event = {
   title: string;
   categories: number[];
   organizer: number[];
+  description: string;
+  excerpt: string;
   venue: Venue;
+  image: EventImage;
+};
+
+export type EventImage = {
+  url: string;
 };
 
 export type Organizer = {
