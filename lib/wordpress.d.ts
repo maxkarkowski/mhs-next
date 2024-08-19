@@ -53,6 +53,25 @@ export type Event = {
   start_date: string;
   end_date: string;
   title: string;
+  categories: number[];
+  organizer: number[];
+  venue: Venue;
+};
+
+export type Organizer = {
+  id: number;
+  global_id: number;
+  organizer: string;
+  email: string;
+  website: string;
+};
+
+export type Venue = {
+  id: number;
+  global_id: number;
+  slug: string;
+  venue: string;
+  address: string;
 };
 
 export type Category = {

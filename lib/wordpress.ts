@@ -17,6 +17,13 @@ import {
 
 // WordPress Config
 
+const fetchHeaderOptions = {
+  headers: {
+    Authorization: `${process.env.apiPassword}`,
+    "Content-Type":
+      "application/json; charset=UTF-8; application/x-www-form-urlencoded",
+  },
+};
 const baseUrl = process.env.WORDPRESS_URL;
 
 function getUrl(path: string, query?: Record<string, any>) {
@@ -62,15 +69,26 @@ export async function getAllEvents(filterParams?: {
 
 export async function getPostById(id: number): Promise<Post> {
   const url = getUrl(`/wp-json/wp/v2/posts/${id}`);
-  const response = await fetch(url);
+  const response = await fetch(url, fetchHeaderOptions);
   const post: Post = await response.json();
   return post;
+}
+
+export async function getEventBySlug(slug: string): Promise<Event> {
+  console.log(slug);
+
+  const url = getUrl(`/wp-json/tribe/events/v1/events/by-slug/${slug}`);
+  console.log(url);
+  const response = await fetch(url);
+  const event: Event = await response.json();
+  return event;
 }
 
 export async function getPostBySlug(slug: string): Promise<Post> {
   const url = getUrl("/wp-json/wp/v2/posts", { slug });
   const response = await fetch(url);
   const post: Post[] = await response.json();
+  console.log(post);
   return post[0];
 }
 

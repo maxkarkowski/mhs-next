@@ -31,6 +31,15 @@ export default async function EventCard({ event }: { event: Event }) {
           className="text-xl text-primary font-medium group-hover:underline decoration-muted-foreground underline-offset-4 decoration-dotted transition-all"
         ></div>
       </div>
+      <div className="flex flex-col gap-4">
+        <hr />
+        <div className="flex justify-between items-center text-xs">
+          {event.categories.map((cat: any) => (
+            <div key={cat.id}>{cat.name}</div>
+          ))}
+          <p>{date}</p>
+        </div>
+      </div>
     </Link>
   );
 }
