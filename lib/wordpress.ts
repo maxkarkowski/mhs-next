@@ -32,6 +32,10 @@ function getUrl(path: string, query?: Record<string, any>) {
   return `${baseUrl}${path}${params ? `?${params}` : ""}`;
 }
 
+const timeElapsed = Date.now();
+const today = new Date(timeElapsed);
+const todayString = today.toISOString();
+
 // WordPress Functions
 
 export async function getAllPosts(filterParams?: {
@@ -48,14 +52,13 @@ export async function getAllPosts(filterParams?: {
   const posts: Post[] = await response.json();
   return posts;
 }
-// wp-json/tribe/events/v1/events/?page=1&per_page=10&start_date=2023-08-16 00:00:00&end_date=2026-08-16 23:59:59&status=publish",
 export async function getAllEvents(filterParams?: {
   author?: string;
   tag?: string;
   category?: string;
 }): Promise<Event[]> {
   const url = getUrl(
-    "/wp-json/tribe/events/v1/events/?page=1&per_page=10&start_date=2023-08-16 00:00:00&end_date=2026-08-16 23:59:59&status=publish",
+    `/wp-json/tribe/events/v1/events/?page=1&per_page=10&start_date=${todayString}&end_date=2026-08-16&status=publish`,
     {
       author: filterParams?.author,
       tags: filterParams?.tag,
